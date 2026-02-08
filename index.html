@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+    <h1>Student Expense Tracker</h1>
+    <div>
+        <input type="number" id="initialBalance" placeholder="Initial Balance">
+        <input type="number" id="allowance" placeholder="Monthly Allowance">
+        <h3 id="walletBalance">0</h3>
+    </div>
+    <div>
+        <h2>Total Spent</h2>
+        <h3 id="totalSpent">0</h3>
+    </div>
+    <div>
+        <input type="text" id="expenseName" placeholder="Expense Name">
+        <select id="category">
+        <option disabled selected>Category</option>
+        <option>Food</option>
+        <option>Personal</option>
+        <option>Travel</option>
+        <option>Education</option>
+        </select>
+        <input type="number" id="amount" placeholder="Amount">
+
+    </div>
+    <br>
+    <button onclick="addExpense()">Add Expense</button>
+    
+    <div id="expenseList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
