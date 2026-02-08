@@ -9,29 +9,35 @@
 <body>
     <div id="container">
     <h1>Student Expense Tracker</h1>
-    <div>
+        <div class="balance">
         <input type="number" id="initialBalance" placeholder="Initial Balance">
         <input type="number" id="allowance" placeholder="Monthly Allowance">
-        <h3 id="walletBalance">0</h3>
+        </div>
+        <div class="status">
+        <div class="display">
+            <h2>Wallet Balance</h2>
+            <h3 id="walletBalance">0</h3>
+        </div>
+        <div class="display">
+            <h2>Total Spent</h2>
+            <h3 id="totalSpent">0</h3>
+        </div>
+        
     </div>
     <div>
-        <h2>Total Spent</h2>
-        <h3 id="totalSpent">0</h3>
-    </div>
-    <div>
-        <input type="text" id="expenseName" placeholder="Expense Name">
-        <select id="category">
+        <input class="expense" type="text" id="expenseName" placeholder="Expense Name">
+        <select class="expense" id="category">
         <option disabled selected>Category</option>
         <option>Food</option>
         <option>Personal</option>
         <option>Travel</option>
         <option>Education</option>
         </select>
-        <input type="number" id="amount" placeholder="Amount">
+        <input class="expense" type="number" id="amount" placeholder="Amount">
 
     </div>
     <br>
-    <button onclick="addExpense()">Add Expense</button>
+    <button class="expense" id="addExpense" onclick="addExpense()">Add Expense</button>
     
     <div id="expenseList"></div>
     </div>

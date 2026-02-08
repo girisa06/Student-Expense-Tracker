@@ -3,15 +3,44 @@ body{
     background-color: black;
     color: aliceblue;
 }
-.container{
-    margin: auto;
-    max-width: 50%;
-    color: white;
+h1{
+    background-color:rgba(50, 135, 205, 0.518) ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
 }
-input, button, select{
+#container{
+    margin: auto;
+    max-width: 60%;
+}
+.status{
+    display:flex;
+    gap: 30px;
+    margin-top:20px;
+    margin-bottom: 20px;;
+}
+.display{
+    flex:1;
+    text-align: center;
+    padding:20px
+}
+.balance{
+    display: flex;
+    gap:20px;
+    
+}
+.balance input{
+    flex: 1;
+    padding:10px;
+}
+.expense{
     width:30%;
     padding:10px;
     margin-top: 10px;
+}  
+#addExpense{
+    display: block;
+    margin: 20px auto;
 }
 button:hover{
     cursor:pointer;
